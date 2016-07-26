@@ -38,7 +38,6 @@ public class CustomViewGroup extends ViewGroup {
             measureChild(childView, widthMeasureSpec, heightMeasureSpec);
 
             if (layoutParams.width != LayoutParams.MATCH_PARENT) {
-                measureChild(childView, widthMeasureSpec, heightMeasureSpec);
                 elementsWidth += childView.getMeasuredWidth();
             } else {
                 matchParentElement = childView;
